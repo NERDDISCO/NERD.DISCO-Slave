@@ -1,0 +1,22 @@
+{
+  "name": "NERD.DISCO-Slave",
+  "version": "0.0.1",
+  "description": "",
+  "main": "slave.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Candlestick/NERD.DISCO-Slave.git"
+  },
+  "author": "Tim Pietrusky <timpietrusky@gmail.com> (http://timpietrusky.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Candlestick/NERD.DISCO-Slave/issues"
+  },
+  "homepage": "https://github.com/Candlestick/NERD.DISCO-Slave",
+  "dependencies": {
+    "socket.io-client": "~1.3.3"
+  }
+}
