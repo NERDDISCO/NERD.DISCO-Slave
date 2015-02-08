@@ -1,7 +1,7 @@
 var config = {
   // The master of this slave
   myMaster : {
-    host : 'nerd.disco.overlord',
+    host : 'nerd.disco.master',
     port : 1337
   },
 
