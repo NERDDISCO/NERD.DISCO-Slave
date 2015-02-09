@@ -13,6 +13,11 @@ socket.on('connect', function() {
 
   // Send current status to the master
   socket.emit('/status', status);
+
+  // Received a message to control LEDs
+  socket.on('/led', function(msg) {
+    console.log(msg);
+  });
 });
 
 socket.on('disconnect', function() {
