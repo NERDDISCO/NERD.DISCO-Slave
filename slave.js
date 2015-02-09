@@ -3,8 +3,16 @@ var io = require('socket.io-client'),
     socket = io.connect(config.socketio.client.uri)
 ;
 
+var status = {
+  name : 'raspberry one'
+};
+
+// Connected to master
 socket.on('connect', function() {
-  console.log('connection');
+  console.log('connection established.');
+
+  // Send current status to the master
+  socket.emit('/status', status);
 });
 
 socket.on('disconnect', function() {
