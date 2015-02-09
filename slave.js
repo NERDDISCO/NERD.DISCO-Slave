@@ -4,12 +4,12 @@ var io = require('socket.io-client'),
 ;
 
 var status = {
-  name : 'raspberry one'
+  name : 'slave'
 };
 
 // Connected to master
 socket.on('connect', function() {
-  console.log('connection established.');
+  console.log('Connection to '+config.socketio.client.uri+' established.');
 
   // Send current status to the master
   socket.emit('/status', status);
