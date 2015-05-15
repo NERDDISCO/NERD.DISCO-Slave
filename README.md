@@ -5,7 +5,7 @@
 
 ### Raspberry Pi
 
-- Use NOOBS to install an OS: [HowTo](http://www.raspberrypi.org/help/noobs-setup/)
+- Use NOOBS to install an OS: [HowTo](http://www.raspberrypi.org/help/noobs-setup/) (Recommended: NOOBS for offline and network install, includes Raspbian)
 - Enable SSH
 - Configure WIFI over the command line: [HowTo](http://www.ghacks.net/2009/04/14/connect-to-a-wireless-network-via-command-line/)
 - Restart the Raspberry Pi: `sudo reboot`
@@ -32,3 +32,4 @@ You can find a good article with getting started information [here](http://www.a
 ### Fadecandy Server
 
 - Install the server on the Raspberry Pi: [HowTo](https://learn.adafruit.com/1500-neopixel-led-curtain-with-raspberry-pi-fadecandy/fadecandy-server-setup)
+- Create a config for the server: [HowTo](https://github.com/scanlime/fadecandy/blob/master/doc/fc_server_config.md)

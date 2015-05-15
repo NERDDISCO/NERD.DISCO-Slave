@@ -28,17 +28,17 @@ OPC.prototype._reconnect = function()
     this.connected = false;
 
     this.socket.on('close', function() {
-        console.log("Connection closed");
+        console.log("Fadecandy Client - Connection closed");
         _this.socket = null;
         _this.connected = false;
     });
 
     this.socket.on('error', function(error) {
-      console.error('Could not connect to Fadecandy Server.');
+      console.error('Fadecandy Client - Could not connect to Fadecandy Server.');
     });
 
     this.socket.connect(this.port, this.host, function() {
-        console.log("Connected to " + _this.socket.remoteAddress);
+        console.log("Fadecandy Client - Connected to " + _this.socket.remoteAddress);
         _this.connected = true;
         _this.socket.setNoDelay();
     });
