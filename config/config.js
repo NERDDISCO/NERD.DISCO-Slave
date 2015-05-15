@@ -1,19 +1,17 @@
 var config = {
   // The master of this slave
   myMaster : {
-    host : 'nerd.disco.master',
+    host : 'nerddisco.master',
     port : 1337
   },
 
-  // Configuration for socket.io client / server
   socketio : {
-    client : undefined,
-    server : undefined
+    server : null
   }
 };
 
 // socket.io - Client configuration
-config.socketio.client = {
+config.socketio.server = {
   uri: 'http://' + config.myMaster.host + ':' + config.myMaster.port
 };
 
